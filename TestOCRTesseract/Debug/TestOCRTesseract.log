@@ -1,0 +1,20 @@
+﻿Build started 2/26/2016 6:39:46 PM.
+     1>Project "C:\Users\dleiva\Documents\Visual Studio 2013\Projects\TestOCRTesseract\TestOCRTesseract\TestOCRTesseract.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /IC:\opencv\build\include /I"C:\Tesseract-OCR\tesseract-ocr\ccmain" /I"C:\Tesseract-OCR\tesseract-ocr\ccutil" /I"C:\Tesseract-OCR\tesseract-ocr\api" /I"C:\Tesseract-OCR\include\leptonica" /I"C:\Tesseract-OCR\include" /I"C:\Tesseract-OCR\tesseract-ocr\ccstruct" /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Source.cpp
+         Skipping... (no relevant changes detected)
+         Source.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\dleiva\Documents\Visual Studio 2013\Projects\TestOCRTesseract\Debug\TestOCRTesseract.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Tesseract-OCR\lib" /LIBPATH:C:\opencv\build\x64\vc14\lib opencv_world310.lib opencv_world310d.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\dleiva\Documents\Visual Studio 2013\Projects\TestOCRTesseract\Debug\TestOCRTesseract.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\dleiva\Documents\Visual Studio 2013\Projects\TestOCRTesseract\Debug\TestOCRTesseract.lib" /MACHINE:X86 Debug\Source.obj
+     1>Source.obj : error LNK2019: unresolved external symbol "void __cdecl cv::fastFree(void *)" (?fastFree@cv@@YAXPAX@Z) referenced in function "public: __thiscall cv::Mat::~Mat(void)" (??1Mat@cv@@QAE@XZ)
+     1>Source.obj : error LNK2019: unresolved external symbol "private: char * __thiscall cv::String::allocate(unsigned int)" (?allocate@String@cv@@AAEPADI@Z) referenced in function "public: __thiscall cv::String::String(char const *)" (??0String@cv@@QAE@PBD@Z)
+     1>Source.obj : error LNK2019: unresolved external symbol "private: void __thiscall cv::String::deallocate(void)" (?deallocate@String@cv@@AAEXXZ) referenced in function "public: __thiscall cv::String::~String(void)" (??1String@cv@@QAE@XZ)
+     1>Source.obj : error LNK2019: unresolved external symbol "public: void __thiscall cv::Mat::deallocate(void)" (?deallocate@Mat@cv@@QAEXXZ) referenced in function "public: void __thiscall cv::Mat::release(void)" (?release@Mat@cv@@QAEXXZ)
+     1>Source.obj : error LNK2019: unresolved external symbol "class cv::Mat __cdecl cv::imread(class cv::String const &,int)" (?imread@cv@@YA?AVMat@1@ABVString@1@H@Z) referenced in function _main
+     1>Source.obj : error LNK2019: unresolved external symbol "void __cdecl cv::cvtColor(class cv::_InputArray const &,class cv::_OutputArray const &,int,int)" (?cvtColor@cv@@YAXABV_InputArray@1@ABV_OutputArray@1@HH@Z) referenced in function _main
+     1>C:\Users\dleiva\Documents\Visual Studio 2013\Projects\TestOCRTesseract\Debug\TestOCRTesseract.exe : fatal error LNK1120: 6 unresolved externals
+     1>Done Building Project "C:\Users\dleiva\Documents\Visual Studio 2013\Projects\TestOCRTesseract\TestOCRTesseract\TestOCRTesseract.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.45
